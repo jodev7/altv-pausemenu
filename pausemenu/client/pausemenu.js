@@ -12,7 +12,7 @@ class PauseMenu {
     static Open(key) {
         if(key === 27) {
             if(view) return
-            view = new alt.WebView('http://resource/client/html/index.html')
+            view = new alt.WebView('http://resource/client/dist/index.html')
             alt.toggleGameControls(false)
             view.focus()
             alt.showCursor(true)
